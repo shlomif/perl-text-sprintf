@@ -1,14 +1,15 @@
 Build.PL
 Changes
 lib/Text/Sprintf/Named.pm
+Makefile.PL
 MANIFEST
 META.yml # Will be created by "make dist"
 README
 t/00-load.t
 t/01-use.t
 t/02-override-param-retrieval.t
+t/03-incomplete.t
 t/boilerplate.t
 TODO
 t/pod-coverage.t
 t/pod.t
-Makefile.PL

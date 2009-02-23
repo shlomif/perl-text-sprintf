@@ -4,6 +4,7 @@ use warnings;
 use strict;
 
 use Carp;
+use warnings::register;
 
 =head1 NAME
 
@@ -97,6 +98,10 @@ sub format
 
     my $args = shift || {};
 
+    if ( (scalar keys %{$args}) > 0  && not exists $args->{args} ){
+        warnings::warnif( $self, 'Format parameters were specified, but none of them were \'args\', this is probably a mistake.' );
+    }
+
     my $named_params = $args->{args} || {};
 
     my $format = $self->_fmt;
@@ -140,7 +145,10 @@ The name of the conversion.
 sub calc_param
 {
     my ($self, $args) = @_;
-
+    if ( not exists $args->{named_params}->{$args->{name}} ){
+        warnings::warnif($self, "Token '$args->{name}' specified in the format '$self->{_fmt}' was not found." );
+        return '';
+    }
     return $args->{named_params}->{$args->{name}};
 }
 
