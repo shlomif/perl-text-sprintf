@@ -1,6 +1,6 @@
 Revision history for Text::Sprintf::Named
 
-0.0301  TODO
+0.0301  Thu Sep 10 14:11:07 IDT 2009
         * Bumped the required version number of Test::Warn to 0.21.
             - Thanks to Eric Wilhelm!
             - http://rt.cpan.org/Public/Bug/Display.html?id=49451
