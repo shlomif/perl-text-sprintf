@@ -1,5 +1,13 @@
 Revision history for Text::Sprintf::Named
 
+0.0400
+        * Add a named_sprintf() export for convenient one-off non-OOP
+        invocations.
+            - Tested in t/04-procedural-iface.t
+        * Add more implicit requirements for Build.PL.
+        * Convert the distribution to Test::Run::Builder (which allows for
+        "./Build runtest" and "./Build distruntest").
+
 0.0301  Thu Sep 10 14:11:07 IDT 2009
         * Bumped the required version number of Test::Warn to 0.21.
             - Thanks to Eric Wilhelm!
