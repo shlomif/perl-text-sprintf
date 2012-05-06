@@ -27,6 +27,20 @@ my $builder = Test::Run::Builder->new(
     configure_requires => {
         'Module::Build' => '0.36',
     },
+    meta_merge => {
+        resources => {
+            repository => "https://bitbucket.org/shlomif/perl-text-sprintf",
+        },
+        keywords =>
+        [
+            "conversions",
+            "format",
+            "named",
+            "percent",
+            "python",
+            "sprintf",
+        ],
+    },
 );
 
 $builder->create_build_script();

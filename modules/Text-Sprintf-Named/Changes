@@ -7,6 +7,7 @@ Revision history for Text::Sprintf::Named
         * Add more implicit requirements for Build.PL.
         * Convert the distribution to Test::Run::Builder (which allows for
         "./Build runtest" and "./Build distruntest").
+        * Add keywords and resources to META.json/META.yml.
 
 0.0301  Thu Sep 10 14:11:07 IDT 2009
         * Bumped the required version number of Test::Warn to 0.21.
