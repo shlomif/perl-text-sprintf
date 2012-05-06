@@ -1,6 +1,6 @@
 Revision history for Text::Sprintf::Named
 
-0.0400
+0.0400  Sun May  6 23:16:50 IDT 2012
         * Add a named_sprintf() export for convenient one-off non-OOP
         invocations.
             - Tested in t/04-procedural-iface.t
