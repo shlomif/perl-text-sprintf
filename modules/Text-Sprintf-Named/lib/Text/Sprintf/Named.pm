@@ -294,6 +294,12 @@ Its license is the GNU General Public Licence version 2 (GPLv2), which is both
 restrictive and incompatible with version 3 of the GPL and with many other
 open-source licenses.
 
+L<String::Sprintf> appears to allow one to provide custom sprintf/printf
+formats (without providing named conversions).
+
+For the lighter side, there is L<Acme::StringFormat>, which provides a
+"%" operator to format a string.
+
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2006 Shlomi Fish, all rights reserved.
