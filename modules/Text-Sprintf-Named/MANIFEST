@@ -3,6 +3,7 @@ Changes
 lib/Text/Sprintf/Named.pm
 Makefile.PL
 MANIFEST
+META.json
 META.yml # Will be created by "make dist"
 README
 t/00-load.t

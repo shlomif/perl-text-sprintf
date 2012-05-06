@@ -1,0 +1,9 @@
+modules/Text-Sprintf-Named/Build
+modules/Text-Sprintf-Named/_build
+modules/Text-Sprintf-Named/blib
+modules/Text-Sprintf-Named/META.json
+modules/Text-Sprintf-Named/META.yml
+modules/Text-Sprintf-Named/MYMETA.json
+modules/Text-Sprintf-Named/MYMETA.yml
+modules/Text-Sprintf-Named/Makefile.PL
+modules/Text-Sprintf-Named/Text-Sprintf-Named-\d\.\d+
