@@ -276,6 +276,24 @@ The (possibly ad-hoc) regex for matching the optional digits+symbols
 parameters' prefix of the sprintf conversion was originally written by Bart 
 Lateur (BARTL on CPAN) for his L<String::Sprintf> module.
 
+The syntax was borrowed directly from Python’s "%" operator when used
+with its dictionaries as the right-hand argument. A quick web search did
+not yield good documentation about it (and I came with the idea of a named
+sprintf without knowing that Python had it, only ran into the fact that
+Python had it by web-searching).
+
+=head1 SIMILAR MODULES
+
+L<Text::sprintfn> is a newer module which only provides a procedural interface 
+that allows one to mix positional and named arguments, with some other
+interesting features.
+
+L<String::Formatter> is a comprehensive module that allows one to define
+custom sprintf-like functions (I’m not sure whether it has named conversions).
+Its license is the GNU General Public Licence version 2 (GPLv2), which is both
+restrictive and incompatible with version 3 of the GPL and with many other
+open-source licenses.
+
 =head1 COPYRIGHT & LICENSE
 
 Copyright 2006 Shlomi Fish, all rights reserved.
