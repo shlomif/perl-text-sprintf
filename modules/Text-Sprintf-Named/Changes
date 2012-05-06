@@ -8,6 +8,7 @@ Revision history for Text::Sprintf::Named
         * Convert the distribution to Test::Run::Builder (which allows for
         "./Build runtest" and "./Build distruntest").
         * Add keywords and resources to META.json/META.yml.
+        * Add the "SIMILAR MODULES" section to the documentation.
 
 0.0301  Thu Sep 10 14:11:07 IDT 2009
         * Bumped the required version number of Test::Warn to 0.21.
