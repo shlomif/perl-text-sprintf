@@ -10,7 +10,8 @@ use Text::Sprintf::Named qw(named_sprintf);
 {
     # TEST
     is (
-        named_sprintf('Hello %(name)s!', { name => "Sophie", }),
+        scalar( named_sprintf('Hello %(name)s!', { name => "Sophie", }) ),
         'Hello Sophie!',
+        'named_sprintf works with an hash-ref as the parameters designator',
     );
 }
