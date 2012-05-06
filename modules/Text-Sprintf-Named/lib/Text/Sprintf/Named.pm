@@ -6,6 +6,12 @@ use strict;
 use Carp;
 use warnings::register;
 
+use parent 'Exporter';
+
+use vars qw(@EXPORT_OK);
+
+@EXPORT_OK = (qw( named_sprintf ));
+
 =head1 NAME
 
 Text::Sprintf::Named - sprintf-like function with named conversions
@@ -32,6 +38,16 @@ our $VERSION = '0.0301';
 
     # Returns "Hello John! Today is Thursday!"
     $formatter->format({args => {'name' => "John", 'day' => "Thursday"}});
+
+    # Or alternatively using the non-OOP interface:
+
+    use Text::Sprintf::Named qw(named_sprintf);
+
+    # Prints "Hello Sophie!" (and a newline).
+    print named_sprintf("Hello %(name)s!\n", { name => 'Sophie' });
+
+    # Same, but with a flattened parameter list (not inside a hash reference)
+    print named_sprintf("Hello %(name)s!\n", name => 'Sophie');
 
 =head1 DESCRIPTION
 
@@ -175,6 +191,39 @@ sub _sprintf
     my ($self, $format, @args) = @_;
 
     return sprintf($format, @args);
+}
+
+=head2 named_sprintf($format, {%parameters})
+
+=head2 named_sprintf($format, %parameters)
+
+This is a convenience function to directly format a string with the named
+parameters, which can be specified inside a (non-blessed) hash reference or
+as a flattened hash. See the synopsis for an example.
+
+=cut
+
+sub named_sprintf
+{
+    my ($format, @args) = @_;
+
+    my $params;
+    if (! @args)
+    {
+        $params = {};
+    }
+    elsif (ref($args[0]) eq "HASH")
+    {
+        $params = shift(@args);
+    }
+    else
+    {
+        $params = {@args};
+    }
+
+    return 
+        Text::Sprintf::Named->new({ fmt => $format})
+                            ->format({args => $params});
 }
 
 =head1 AUTHOR
