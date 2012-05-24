@@ -1,6 +1,6 @@
 Revision history for Text::Sprintf::Named
 
-0.0401
+0.0401  Thu May 24 08:58:19 IDT 2012
         * Fix the POD to contain an "=encoding utf8" directive (for correctness
         and to appease Pod::Simple 3.21.
             - see http://www.cpantesters.org/cpan/report/6a78d960-a532-11e1-91a2-4d2df4b14d39
