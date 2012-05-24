@@ -12,6 +12,8 @@ use vars qw(@EXPORT_OK);
 
 @EXPORT_OK = (qw( named_sprintf ));
 
+=encoding utf8
+
 =head1 NAME
 
 Text::Sprintf::Named - sprintf-like function with named conversions
