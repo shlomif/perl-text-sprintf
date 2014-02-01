@@ -3,6 +3,7 @@ Revision history for Text::Sprintf::Named
 0.0402  2014-02-01
         * Add t/cpan-changes.t and t/style-trailing-space.t .
         * Remove Makefile.PL.
+        * Minimum version of perl is 5.8.x (CPANTS).
 
 0.0401  2012-05-24
         * Fix the POD to contain an "=encoding utf8" directive (for correctness

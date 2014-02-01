@@ -3,6 +3,8 @@ package Text::Sprintf::Named;
 use warnings;
 use strict;
 
+use 5.008;
+
 use Carp;
 use warnings::register;
 

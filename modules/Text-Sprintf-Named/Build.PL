@@ -14,6 +14,7 @@ my $builder = Test::Run::Builder->new(
         'Carp' => 0,
         'Exporter' => 0,
         'parent' => 0,
+        'perl' => '5.008',
         'strict' => 0,
         'warnings' => 0,
         'warnings::register' => 0,
