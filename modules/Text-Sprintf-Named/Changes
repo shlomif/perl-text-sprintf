@@ -1,11 +1,11 @@
 Revision history for Text::Sprintf::Named
 
-0.0401  Thu May 24 08:58:19 IDT 2012
+0.0401  2012-05-24
         * Fix the POD to contain an "=encoding utf8" directive (for correctness
         and to appease Pod::Simple 3.21.
             - see http://www.cpantesters.org/cpan/report/6a78d960-a532-11e1-91a2-4d2df4b14d39
 
-0.0400  Sun May  6 23:16:50 IDT 2012
+0.0400  2012-05-06
         * Add a named_sprintf() export for convenient one-off non-OOP
         invocations.
             - Tested in t/04-procedural-iface.t
@@ -15,26 +15,26 @@ Revision history for Text::Sprintf::Named
         * Add keywords and resources to META.json/META.yml.
         * Add the "SIMILAR MODULES" section to the documentation.
 
-0.0301  Thu Sep 10 14:11:07 IDT 2009
+0.0301  2009-09-10
         * Bumped the required version number of Test::Warn to 0.21.
             - Thanks to Eric Wilhelm!
             - http://rt.cpan.org/Public/Bug/Display.html?id=49451
 
-0.0300  Mon Feb 23 13:04:35 IST 2009
+0.0300  2009-02-23
         * Added warnings when used arguments are not specified in the %args.
             - See the t/03-incomplete.t test file.
             - Thanks to kent\n!
 
-0.0203  Sat Jan 10 21:27:31 IST 2009
+0.0203  2009-01-10
         * Corrected two more code typos in the synopsis.
             - Thanks to kent\n!
 
-0.0202  Sat Jan 10 21:22:20 IST 2009
+0.0202  2009-01-10
         * Corrected the synopsis to say ->format({args => \%args})
         instead of ->format(\%args) which was incorrect.
             - Thanks to kent\n!
 
-0.0201  Thu Aug 21 21:25:11 IDT 2008
+0.0201  2008-08-21
         * Changed the Build.PL license from 'bsd' to 'mit'.
         * Added create_makefile_pl => 'passthrough' to Build.PL to
         generate a Makefile.PL in the distribution.
@@ -42,10 +42,10 @@ Revision history for Text::Sprintf::Named
             installed.
         * Revised the licensing information in the POD.
 
-0.02    Fri Apr 20 09:20:15 IDT 2007
+0.02    2007-04-20
         Added the customisation of the named parameter, to determine
         how to calculate it. (see calc_param()).
 
-0.01    TODO : Fill the time.
+0.01    2006-11-22
         First version, released on an unsuspecting world.
 

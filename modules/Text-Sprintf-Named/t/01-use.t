@@ -25,7 +25,7 @@ use Text::Sprintf::Named;
         "Checking ->format() - 2 - empty hashref"
     );
     # TEST
-    is ($obj->format({args => {foo => "Bardom", "isaac" => "Newton"}}), 
+    is ($obj->format({args => {foo => "Bardom", "isaac" => "Newton"}}),
         "95% Humidity",
         "Checking ->format() - 3 - full hashref"
     );
@@ -47,7 +47,7 @@ sub n_s
         ;
 }
 
-# TODO: test several different calls to the same format returning 
+# TODO: test several different calls to the same format returning
 # different strings.
 
 {
@@ -61,7 +61,7 @@ sub n_s
     is (n_s("I want\n%% Plus\n%% Minus%% Thrice\n%% Dice\n", {}),
         "I want\n% Plus\n% Minus% Thrice\n% Dice\n",
         "Testing multiple consecutive % sign"
-    );   
+    );
 }
 
 {
@@ -82,7 +82,7 @@ sub n_s
 
 {
     # TEST
-    is (n_s("You have 0x%(bytes)x bytes left, and your lucky character is %(mychar)c", 
+    is (n_s("You have 0x%(bytes)x bytes left, and your lucky character is %(mychar)c",
             {bytes => 500, mychar => ord('C'),}),
         "You have 0x1f4 bytes left, and your lucky character is C",
         "Testing the %(name)x and %(name)c conversions"
@@ -124,6 +124,6 @@ sub n_s
     # TEST
     is ($obj->format({args => {'name' => "Avi", 'num' => "6508" }}),
         "Hello Avi. Your lucky number is 6508!",
-        "Testing multiple ->format calls for the same object - 2"        
+        "Testing multiple ->format calls for the same object - 2"
     );
 }

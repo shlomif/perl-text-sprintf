@@ -19,9 +19,9 @@ use Text::Sprintf::Named qw(named_sprintf);
 {
     # TEST
     is (
-        scalar( 
+        scalar(
             named_sprintf(
-                'Hello %(name)s! Are you from %(city)s?', 
+                'Hello %(name)s! Are you from %(city)s?',
                 city => "Lisbon",
                 name => "Sophie",
             )

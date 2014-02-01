@@ -1,9 +1,9 @@
 Text::Sprintf::Named
 
-This module provides a sprintf-like function with named conversions (similar 
+This module provides a sprintf-like function with named conversions (similar
 to the one in Python). So for example the call:
 
-    named_sprintf("Hello %(name)s! Happy new %(year)d!", 
+    named_sprintf("Hello %(name)s! Happy new %(year)d!",
         { name => "Sophie", year => 2007 }
     );
 
@@ -43,4 +43,4 @@ COPYRIGHT AND LICENCE
 
 Copyright (C) 2006 Shlomi Fish
 
-This program is released under the following license: MIT X11. 
+This program is released under the following license: MIT X11.

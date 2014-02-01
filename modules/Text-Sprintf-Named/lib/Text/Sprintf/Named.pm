@@ -57,7 +57,7 @@ Text::Sprintf::Named provides a sprintf equivalent with named conversions.
 Named conversions are sprintf field specifiers (like C<"%s"> or C<"%4d>")
 only they are associated with the key of an associative array of
 parameters. So for example C<"%(name)s"> will emit the C<'name'> parameter
-as a string, and C<"%(num)4d"> will emit the C<'num'> parameter 
+as a string, and C<"%(num)4d"> will emit the C<'num'> parameter
 as a variable with a width of 4.
 
 =head1 FUNCTIONS
@@ -223,7 +223,7 @@ sub named_sprintf
         $params = {@args};
     }
 
-    return 
+    return
         Text::Sprintf::Named->new({ fmt => $format})
                             ->format({args => $params});
 }
@@ -274,8 +274,8 @@ L<http://svn.berlios.de/svnroot/repos/web-cpan/Text-Sprintf/trunk/>
 
 =head1 ACKNOWLEDGEMENTS
 
-The (possibly ad-hoc) regex for matching the optional digits+symbols 
-parameters' prefix of the sprintf conversion was originally written by Bart 
+The (possibly ad-hoc) regex for matching the optional digits+symbols
+parameters' prefix of the sprintf conversion was originally written by Bart
 Lateur (BARTL on CPAN) for his L<String::Sprintf> module.
 
 The syntax was borrowed directly from Python’s "%" operator when used
@@ -286,7 +286,7 @@ Python had it by web-searching).
 
 =head1 SIMILAR MODULES
 
-L<Text::sprintfn> is a newer module which only provides a procedural interface 
+L<Text::sprintfn> is a newer module which only provides a procedural interface
 that allows one to mix positional and named arguments, with some other
 interesting features.
 
