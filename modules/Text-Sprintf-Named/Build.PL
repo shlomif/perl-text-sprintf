@@ -23,7 +23,6 @@ my $builder = Test::Run::Builder->new(
         'Test::Warn' => '0.21',
     },
     add_to_cleanup      => [ 'Text::Sprintf::Named-*' ],
-    create_makefile_pl => 'passthrough',
     configure_requires => {
         'Module::Build' => '0.36',
     },
