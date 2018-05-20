@@ -20,14 +20,6 @@ use vars qw(@EXPORT_OK);
 
 Text::Sprintf::Named - sprintf-like function with named conversions
 
-=head1 VERSION
-
-Version 0.0402
-
-=cut
-
-our $VERSION = '0.0402';
-
 =head1 SYNOPSIS
 
     use Text::Sprintf::Named;
