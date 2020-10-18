@@ -226,46 +226,6 @@ sub named_sprintf
 
 Shlomi Fish, C<< shlomif@cpan.org >> , L<http://www.shlomifish.org/>
 
-=head1 BUGS
-
-Please report any bugs or feature requests to
-C<bug-text-sprintf-named at rt.cpan.org>, or through the web interface at
-L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Text::Sprintf::Named>.
-I will be notified, and then you'll automatically be notified of progress on
-your bug as I make changes.
-
-=head1 SUPPORT
-
-You can find documentation for this module with the perldoc command.
-
-    perldoc Text::Sprintf::Named
-
-You can also look for information at:
-
-=over 4
-
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/Text::Sprintf::Named>
-
-=item * CPAN Ratings
-
-L<http://cpanratings.perl.org/d/Text::Sprintf::Named>
-
-=item * RT: CPAN's request tracker
-
-L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Text::Sprintf::Named>
-
-=item * Search CPAN
-
-L<http://search.cpan.org/dist/Text::Sprintf::Named>
-
-=item * Subversion Repository
-
-L<http://svn.berlios.de/svnroot/repos/web-cpan/Text-Sprintf/trunk/>
-
-=back
-
 =head1 ACKNOWLEDGEMENTS
 
 The (possibly ad-hoc) regex for matching the optional digits+symbols
@@ -287,7 +247,7 @@ interesting features.
 L<String::Formatter> is a comprehensive module that allows one to define
 custom sprintf-like functions (I’m not sure whether it has named conversions).
 Its license is the GNU General Public Licence version 2 (GPLv2), which is both
-restrictive and incompatible with version 3 of the GPL and with many other
+restrictive, and incompatible with version 3 of the GPL and with many other
 open-source licenses.
 
 L<String::Sprintf> appears to allow one to provide custom sprintf/printf
